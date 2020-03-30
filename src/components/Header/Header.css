@@ -1,0 +1,42 @@
+.title__content {
+    font-size: 16px;
+    color: #D42026;
+}
+
+.title__content_1 {
+    margin-right: 1px;
+    font-weight: 800;
+}
+
+.title__content_2 {
+    font-weight: lighter;
+}
+
+.header {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 25px;
+}
+
+.header__author {
+    display: none;
+}
+
+.header__title::after {
+    content: '';
+    width: 54px;
+    height: 4px;
+    display: block;
+    background: #D42026;
+    margin-top: 3px;
+}
+
+@media(min-width: 500px) {
+    .title__content {
+        font-size: 27px
+    }
+
+    .input__label {
+        font-size: 16px!important
+    }
+}

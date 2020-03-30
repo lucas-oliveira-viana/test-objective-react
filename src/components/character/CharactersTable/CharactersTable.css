@@ -1,0 +1,123 @@
+table {
+    width: 100%;
+}
+
+.characters {
+    margin-top: 12px;
+}
+
+.table__character {
+    display: block;
+    padding: 18px 0;
+    border-bottom: 1px solid #D42026
+}
+
+.identity__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.head__item {
+    padding: 12px 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    background: #D42026;
+}
+
+.head__item_description {
+    display: none;
+}
+
+.character__identity {
+    display: flex;
+    align-items: center;
+}
+
+.character__description {
+    display: none;
+    flex-direction: column;
+}
+
+.characters__loading {
+    background: url(../../../assets/load.svg);
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: loading 1s linear infinite;
+    margin-top: 200px;
+    margin-bottom: 200px
+}
+
+@keyframes loading {
+    to { transform: rotate(360deg); }
+}
+
+@media (min-width: 500px) {
+    .header {
+        margin-left: 42px!important;
+    }
+
+    .input__wrapper {
+        margin-left: 42px!important;
+    }
+
+    .characters {
+        margin-top: 12px;
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+
+    .characters__table {
+        border-collapse: collapse;
+    }
+
+    .characters__loading {
+        margin-top: 400px;
+        margin-bottom: 400px;
+    }
+
+    .head__item_name {
+        width: 50%;
+        border-right-color: white;
+        border-right-style: solid;
+        border-right-width: 10px;
+    }
+
+    .head__item_description {
+        width: 100%;
+        display: block;
+    }
+
+    .character__description {
+        display: table-cell;
+        text-align: center;
+    }
+
+    .table__character {
+        display: table-row;
+        padding: 0;
+    }
+
+    .character__identity {
+        display: table-cell;
+    }
+
+    .identity__wrapper {
+        padding: 18px 0;
+    }
+
+    .table__character td {
+        border-bottom: 1px solid #D42026;
+        padding: 0;
+    }
+
+    .table__character:hover td {
+        border-bottom: 1px solid rgba(212, 32, 38, 0.219);
+        cursor: pointer;
+        padding: 0;
+    }
+}
